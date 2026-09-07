@@ -1,4 +1,9 @@
-cd ~/sanchez-post1-u1-patrones
-git status
-git log --oneline
-ls parte-1-refactorizacion-solid/src/main/java/com/patrones/u1
+package com.patrones.u1;
+
+public class RegularDiscount implements DiscountStrategy {
+
+    @Override
+    public double apply(double total) {
+        return total * 0.95;
+    }
+}
